@@ -43,3 +43,4 @@ HttpUtils.doGetStr(url) or HttpUtils.doPostStr(url,params);
     pairs.add(pair3);  
     httpPost.setEntity(new UrlEncodedFormEntity(pairs, HTTP.UTF_8)) 
 ```
+比较全的请求示例代码：https://www.cnblogs.com/liaojie970/p/8490505.html
