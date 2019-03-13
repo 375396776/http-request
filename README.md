@@ -43,4 +43,9 @@ HttpUtils.doGetStr(url) or HttpUtils.doPostStr(url,params);
     pairs.add(pair3);  
     httpPost.setEntity(new UrlEncodedFormEntity(pairs, HTTP.UTF_8)) 
 ```
+//since 4.3 不再使用 `DefaultHttpClient`    
+```java
+ CloseableHttpClient closeableHttpClient = HttpClientBuilder.create().build();     
+ ...
+```
 比较全的请求示例代码：https://www.cnblogs.com/liaojie970/p/8490505.html
